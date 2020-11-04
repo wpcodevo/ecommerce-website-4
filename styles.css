@@ -71,7 +71,7 @@ li {
 
 @media only screen and (max-width: 996px) {
   .header {
-    min-height: 70vh;
+    min-height: 60vh;
   }
 
   .header img {
@@ -80,10 +80,6 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    min-height: 60vh;
-  }
-
   .header img {
     width: 40rem;
   }
