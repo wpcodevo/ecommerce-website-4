@@ -76,12 +76,20 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    min-height: 60vh;
+  }
+
   .header img {
     width: 40rem;
   }
 }
 
 @media only screen and (max-width: 567px) {
+  .header {
+    min-height: 100vh;
+  }
+
   .header img {
     width: 35rem;
   }
