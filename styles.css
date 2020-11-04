@@ -70,6 +70,10 @@ li {
 }
 
 @media only screen and (max-width: 996px) {
+  .header {
+    min-height: 70vh;
+  }
+
   .header img {
     width: 50rem;
   }
