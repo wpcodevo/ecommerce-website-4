@@ -54,7 +54,7 @@ li {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -82,9 +82,15 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #dd9a05;
+  background-color: #243a6f;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 999;
+}
+
+.nav.fix-nav .nav-link,
+.nav.fix-nav .logo,
+.nav.fix-nav .hamburger {
+  color: #fff;
 }
 
 .navigation {
@@ -180,8 +186,11 @@ li {
   .nav-link:visited {
     display: block;
     font-size: 1.7rem;
-    color: #222;
     padding: 1rem 0;
+  }
+
+  .nav.fix-nav .nav-link {
+    color: #243a6f;
   }
 
   .nav-list {
@@ -198,7 +207,7 @@ li {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 4;
   }
 
   .nav.show {
@@ -318,4 +327,203 @@ li {
   .hero-content a {
     padding: 1rem 3rem;
   }
+}
+
+/* Adverts */
+.section {
+  padding: 10rem 0 5rem 0;
+}
+
+.advert-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+.advert-box {
+  position: relative;
+  color: #fff;
+  height: 27rem;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.advert-box:after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: -24%;
+  width: 100%;
+  height: 100%;
+  background: url("../images/banner.png") left bottom/cover no-repeat;
+  background-size: 35rem;
+  z-index: -1;
+}
+
+.advert-box:nth-child(1) {
+  background-color: #f5c5d1;
+}
+
+.advert-box:nth-child(2) {
+  background-color: #a1d1df;
+}
+
+.advert-box:nth-child(3) {
+  background-color: #e5bc00;
+}
+
+.advert-box .dotted {
+  position: relative;
+  height: 100%;
+  border: 2px dashed #f1f1f1;
+  border-radius: 1rem;
+}
+
+.advert-box .content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+.advert-box .content h2,
+.advert-box .content h4 {
+  text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
+}
+
+.advert-box .content h2 {
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.advert-box .content h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/* Featured Products */
+
+.title {
+  margin: 4rem 0 7rem 0;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: var(--pink);
+  width: 50%;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+/* Product */
+.product-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 7rem 3rem;
+}
+
+.product {
+  height: 48rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.product:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.product-header {
+  position: relative;
+  height: 35rem;
+  background-color: #f6f2f1;
+  transition: all 300ms ease-in-out;
+  z-index: 0;
+}
+
+.product-footer {
+  padding: 2rem 1.6rem 1.6rem 1.6rem;
+}
+
+.product-footer h3 {
+  font-size: 2.2rem;
+}
+
+.rating {
+  color: #43b3d9;
+}
+
+.product-footer .price {
+  color: #ff7c9c;
+  font-size: 2rem;
+}
+
+.product:hover .product-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+
+.product-header .icons {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(0, -50%) scale(0);
+  z-index: 2;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.product-header .icons span {
+  background-color: #fff;
+  font-size: 2.5rem;
+  display: block;
+  border-radius: 50%;
+  padding: 1.5rem 1.6rem;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.product-header .icons span i {
+  transition: all 500ms ease-in-out;
+}
+
+.product-header .icons span:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.product-header .icons span:hover {
+  background-color: #ff7c9c;
+  color: #fff;
+}
+
+.product:hover .icons {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
 }
