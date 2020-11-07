@@ -528,6 +528,11 @@ li {
   transform: translate(0, -50%) scale(1);
 }
 
+.product-header .icons a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
 /* Exclusive Product */
 .product-banner {
   display: grid;
@@ -758,4 +763,31 @@ form span {
   transform: translateY(-50%);
   font-size: 2rem;
   z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .all-products .top select {
+    width: 15rem;
+  }
+}
+
+/* Pagination */
+.pagination {
+  padding: 3rem 0 5rem 0;
+}
+
+.pagination span {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid #243a6f;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.pagination span:hover {
+  border: 1px solid #243a6f;
+  background-color: #243a6f;
+  color: #fff;
 }

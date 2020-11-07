@@ -36,10 +36,12 @@ window.addEventListener("scroll", () => {
 // Scroll To
 const links = [...document.querySelectorAll(".scroll-link")];
 links.map(link => {
+  if (!link) return;
   link.addEventListener("click", e => {
     e.preventDefault();
 
     const id = e.target.getAttribute("href").slice(1);
+
     const element = document.getElementById(id);
     const fixNav = navBar.classList.contains("fix-nav");
     let position = element.offsetTop - navHeight;
