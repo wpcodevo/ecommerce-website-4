@@ -1,85 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
-    <!-- Box icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
 
-    <!-- AOS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <!-- Glidejs -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
-    />
-    <!-- Custom StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-      <!-- Navigation -->
-      <nav class="nav">
-        <div class="navigation container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Glidejs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Your Cart</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="navigation container">
+      <div class="logo">
+        <h1>YouTuber<span>.</span></h1>
+      </div>
+
+      <div class="menu">
+        <div class="top-nav">
           <div class="logo">
-            <h1>YouTuber<span>.</span></h1>
+            <h1>YouTuber</h1>
           </div>
-
-          <div class="menu">
-            <div class="top-nav">
-              <div class="logo">
-                <h1>YouTuber</h1>
-              </div>
-              <div class="close">
-                <i class="bx bx-x"></i>
-              </div>
-            </div>
-
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="product.html" class="nav-link">Products</a>
-              </li>
-              <li class="nav-item">
-                <a href="#services" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#skills" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#teams" class="nav-link">Account</a>
-              </li>
-              <li class="nav-item">
-                <a href="cart.html" class="nav-link icon"
-                  ><i class="bx bx-shopping-bag"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <a href="cart.html" class="cart-icon">
-            <i class="bx bx-shopping-bag"></i>
-          </a>
-
-          <div class="hamburger">
-            <i class="bx bx-menu"></i>
+          <div class="close">
+            <i class="bx bx-x"></i>
           </div>
         </div>
-      </nav>
 
-    
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Footer -->
-    <!-- Footer -->
+      <a href="cart.html" class="cart-icon">
+        <i class="bx bx-shopping-bag"></i>
+      </a>
+
+      <div class="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Items -->
+  <div class="container-md cart">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/pic1.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $50.00</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/pic2.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $90.00</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$90.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/pic3.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $60.00</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$60.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/pic4.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $60.00</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$60.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/pic5.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $60.00</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$60.00</td>
+      </tr>
+    </table>
+
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$250</td>
+        </tr>
+      </table>
+      <a href="#" class="checkout btn">Proceed To Checkout</a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Footer -->
   <footer id="footer" class="section footer">
     <div class="container">
       <div class="footer-container">
@@ -140,15 +238,16 @@
   </footer>
   <!-- End Footer -->
 
-    <!-- AOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- Typeit -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <!-- Glidejs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-    <!-- Custom Script -->
-    <script src="./js/index.js"></script>
-  </body>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Typeit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Glidejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
