@@ -98,6 +98,7 @@ li {
 
 .nav.fix-nav .nav-link,
 .nav.fix-nav .logo,
+.nav.fix-nav .cart-icon,
 .nav.fix-nav .hamburger {
   color: #fff;
 }
@@ -295,6 +296,7 @@ li {
   .header {
     min-height: 70vh;
   }
+
   .header .hero-img {
     height: 40rem;
     right: -10%;
@@ -354,15 +356,12 @@ li {
   z-index: 1;
 }
 
-.advert-box:after {
-  content: "";
+.advert-box img {
   position: absolute;
   bottom: 0%;
-  left: -24%;
-  width: 100%;
+  left: -20%;
   height: 100%;
-  background: url("../images/banner.png") left bottom/cover no-repeat;
-  background-size: 35rem;
+  width: 35rem;
   z-index: -1;
 }
 
@@ -650,7 +649,6 @@ li {
 
 .testimonial .img-cover {
   border-radius: 50%;
-  object-fit: cover;
   width: 8rem;
   height: 8rem;
   overflow: hidden;
@@ -659,6 +657,7 @@ li {
 
 .testimonial .img-cover img {
   height: 100%;
+  object-fit: cover;
 }
 
 .testimonial h4 {
@@ -679,7 +678,7 @@ li {
 }
 
 .brand img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1026,6 +1025,7 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
+
 /* 
 .checkout {
   display: inline-block;
