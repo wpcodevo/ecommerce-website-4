@@ -1,4 +1,3 @@
-AOS.init();
 
 const menu = document.querySelector(".menu");
 const navOpen = document.querySelector(".hamburger");
