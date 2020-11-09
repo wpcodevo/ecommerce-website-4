@@ -1026,11 +1026,6 @@ th:last-child {
   text-align: right;
 }
 
-/* 
-.checkout {
-  display: inline-block;
-} */
-
 @media only screen and (max-width: 567px) {
   .cart-info p {
     display: none;
