@@ -1,4 +1,3 @@
-
 const menu = document.querySelector(".menu");
 const navOpen = document.querySelector(".hamburger");
 const navClose = document.querySelector(".close");
